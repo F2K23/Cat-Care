@@ -11,7 +11,7 @@
 
 <hr>
 
-<a href="" class="care">home</a>
+<a href="index.html" class="care">home</a>
 <a href="">care</a>
 <a href="form.html">sign up></a>
 
@@ -25,7 +25,37 @@
             <input id="name-field" type="text" name="full-name" 
             placeholder="your name" required>
         </div>
-    </fieldset>
+
+        <div>
+    <label for="email-field">Email</label>
+    <input id="email-field" type="email" name="email" placeholder="Your email" 
+    required>
+        </div>
+
+        <label for="age">Age</label>
+        <select id="age" name="age" required>
+            <option value="under-20">Under 20</option>
+            <option value="20s">20-29</option>
+            <option value="30s">30-39</option>
+            <option value="40s">40-49</option>
+            <option value="50s">50-59</option>
+            <option value="60+">60+</option>
+        </select>
+ </fieldset>
+ <fieldset>
+    <legend>our products</legend>
+<div>
+     <label for="fav-breed">What is your favourite cat breed?</label>
+    <input id="fav-breed" list="breed" name="fav-breed" required>
+    <datalist id="breed">
+        <option value="British Shorthair">
+        <option value="Maine Coon">
+        <option value="Persian cat">
+        <option value="Sphynx cat">
+        <option value="other">
+    </datalist>
+</div>
+ </fieldset>
 </form>
 
 </body>
