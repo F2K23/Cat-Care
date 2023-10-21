@@ -93,4 +93,11 @@ main {
     padding: 20px 0;
     display:flex;
     justify-content: space-evenly;
+    list-style-type: none;
+    background-color:red;
+}
+#social-networks i{
+    font-size: 25px;
+    padding: 10%;
+    color:#3a3a3a;
 }
