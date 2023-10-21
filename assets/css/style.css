@@ -88,6 +88,9 @@ main {
 }
 
 /*footer*/
-footer {
-    background-color: red;
+#social-networks{
+    text-align: center;
+    padding: 20px 0;
+    display:flex;
+    justify-content: space-evenly;
 }
