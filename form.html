@@ -1,20 +1,48 @@
-<html lang="en-US">
-<head>
-<title>sign up for a chance to win supplies for your pets!</title>
-<link rel="" href="style.css">
-</head>
-<body>
-    <!--heading for sign-up page-->
-<header>
-    <h1>sign up for a chance to win a year supply of products for your cat!</h1>
-    <p>complete this short survey to win!</p>
-</header>
+<!DOCTYPE html>
+<html lang="en">
 
-<hr>
-<!--links to index.html and style.css-->
-<a href="index.html" class="care">home</a>
-<a href="">Care-Plus</a>
-<a href="form.html">sign up</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--meta tags for search engine-->
+    <meta name="description" content="Cat-Care, Care tips for cat owners,
+    Wexford,Ireland ">
+    <meta name="Keywords" content="Cat-Care, Cats, Cat owners in wexford 
+    Ireland, Caring for cats, Kitten, Home care for cats">
+    <!--title-->
+    <title>Cat-Care</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <!--stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Sign up</h1>
+            </a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+            
+        
+            <ul id="menu">
+                <li><a href="index.html" class="care">home</a></li>
+                <li><a href="care.html">care</a></li>
+                <li><a href="form.html">sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--main content-->
+    <main>
+ <h2>Sign up for a chance to win a year supply of cat products</h2>
 
 <form action="https://formdump.codeinstitute.net" method="POST">
 
@@ -24,14 +52,12 @@
 
         <div>
             <label for="name-field">Name</label>
-            <input id="name-field" type="text" name="full-name" 
-            placeholder="your name" required>
+            <input id="name-field" type="text" name="full-name" placeholder="your name" required>
         </div>
 
         <div>
-    <label for="email-field">Email</label>
-    <input id="email-field" type="email" name="email" placeholder="Your email" 
-    required>
+            <label for="email-field">Email</label>
+            <input id="email-field" type="email" name="email" placeholder="Your email" required>
         </div>
 
         <label for="age">Age</label>
@@ -43,71 +69,91 @@
             <option value="50s">50-59</option>
             <option value="60+">60+</option>
         </select>
- </fieldset>
- <fieldset>
-    <!--favourite breed of cat-->
-    <legend>we care, for your care!</legend>
-<div>
-     <label for="fav-breed">What is your favourite cat breed?</label>
-    <input id="fav-breed" list="breed" name="fav-breed" required>
-    <datalist id="breed">
-        <option value="British Shorthair">
-        <option value="Maine Coon">
-        <option value="Persian cat">
-        <option value="Sphynx cat">
-        <option value="other">
-        </datalist>
+    </fieldset>
+    <fieldset>
+        <!--favourite breed of cat-->
+        <legend>we care, for your care!</legend>
+        <div>
+            <label for="fav-breed">What is your favourite cat breed?</label>
+            <input id="fav-breed" list="breed" name="fav-breed" required>
+            <datalist id="breed">
+                <option value="British Shorthair">
+                <option value="Maine Coon">
+                <option value="Persian cat">
+                <option value="Sphynx cat">
+                <option value="other">
+            </datalist>
         </div>
 
         <!--how often does this person feed their cat-->
-    <p>How often do you feed your cat</p>
-    
-    <input id="0-1times-radio" name="times-a-day" value="0-1times" type="radio" required>
-    <label for="0-1times-radio">0 to 1 times</label>
-    
-    <input id="2-3times-radio" name="times-a-day" value="2-3times" type="radio" required>
-    <label for="2-3cups-radio">2 to 3 times</label>
-    
-    <input id="4-5times-radio" name="times-a-day" value="4-5times" type="radio" required>
-    <label for="4-5times-radio">4 to 5 times</label>
-    
-    <input id="6plus-times-radio" name="times-a-day" value="6plus-times" type="radio" required>
-    <label for="6plus-times-radio">6 or more times</label>
+        <p>How often do you feed your cat</p>
 
-    <!--brands of cat food-->
-<p>What brand food does your cat enjoy?</p>
-<div>
-    <input type="checkbox" id="go-cat-checkbox" name="go-cat">
-    <label for="go-cat-checkbox">Go-Cat</label>
-</div>
-<div>
-    <input type="checkbox" id="sheba-checkbox" name="sheba">
-    <label for="sheba-checkbox">Sheba</label>
-</div>
-<div>
-    <input type="checkbox" id="whiskas-checkbox" name="whiskas">
-    <label for="whiskas-checkbox">Whiskas</label>
-</div>
-<div>
-    <input type="checkbox" id="purina-checkbox" name="purina">
-    <label for="purina-checkbox">Purina</label>
-</div>
-</fieldset>
+        <input id="0-1times-radio" name="times-a-day" value="0-1times" type="radio" required>
+        <label for="0-1times-radio">0 to 1 times</label>
 
-<!--feedback on our website-->
-<fieldset>
-    <legend>Feedback</legend>
-    <label for="feedback">How can we improve your experience with us?</label>
-    <br>
-    <textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
-</fieldset>
-<!--submit your application-->
-<button type="submit">
-    <strong>Enter prize draw</strong>
-</button>
-<input type="reset" value="Reset Form">
+        <input id="2-3times-radio" name="times-a-day" value="2-3times" type="radio" required>
+        <label for="2-3cups-radio">2 to 3 times</label>
+
+        <input id="4-5times-radio" name="times-a-day" value="4-5times" type="radio" required>
+        <label for="4-5times-radio">4 to 5 times</label>
+
+        <input id="6plus-times-radio" name="times-a-day" value="6plus-times" type="radio" required>
+        <label for="6plus-times-radio">6 or more times</label>
+
+        <!--brands of cat food-->
+        <p>What brand food does your cat enjoy?</p>
+        <div>
+            <input type="checkbox" id="go-cat-checkbox" name="go-cat">
+            <label for="go-cat-checkbox">Go-Cat</label>
+        </div>
+        <div>
+            <input type="checkbox" id="sheba-checkbox" name="sheba">
+            <label for="sheba-checkbox">Sheba</label>
+        </div>
+        <div>
+            <input type="checkbox" id="whiskas-checkbox" name="whiskas">
+            <label for="whiskas-checkbox">Whiskas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="purina-checkbox" name="purina">
+            <label for="purina-checkbox">Purina</label>
+        </div>
+    </fieldset>
+
+    <!--feedback on our website-->
+    <fieldset>
+        <legend>Feedback</legend>
+        <label for="feedback">How can we improve your experience with us?</label>
+        <br>
+        <textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
+    </fieldset>
+    <!--submit your application-->
+    <button type="submit">
+        <strong>Enter prize draw</strong>
+    </button>
+    <input type="reset" value="Reset Form">
 
 </form>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="visit our facebook page (open in new tab)"><i class="fa-brands
+    fa-facebook"></i></a>
+            </li>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                aria-label="visit our instagram page (open in new tab)"><i class="fa-brands
+    fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                aria-label="visit our twitter page (open in new tab)"><i class="fa-brands
+    fa-twitter-square"></i></a>
+        </ul>
+    </footer>
+
+    <!--font awesome kit-->
+
+    <script src="https://kit.fontawesome.com/956d5bcc9d.js" crossorigin="anonymous"></script>
 
 </body>
 
