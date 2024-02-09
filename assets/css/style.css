@@ -20,7 +20,7 @@ font-family: 'Quicksand' , sans-serif;
 
 /*header*/
 header {
-    background-color: #ffffff;
+    background-color: grey;
     padding: 0 1rem;
     position:fixed;
     z-index: 99;
@@ -51,6 +51,17 @@ h1 {
     border-bottom: 1px solid #000000;
 }
 
+/* nav styles for toggle dropdown menu*/
+nav{
+    position: absolute;
+    background-color: gray;
+    width:100%;
+    left:0;
+    padding: o 1rem;
+    box-shadow: 0 3px 2px #3a3a3a;
+    display: none;
+}
+
 /*main content*/
 main {
     background-color: #ffffff;
@@ -59,5 +70,6 @@ main {
 }
 /*footer*/
 footer{
-    background-color: #000000;
+    background-color: grey;
+    box-shadow: 0 -3px 2px #3a3a3a;
 }
