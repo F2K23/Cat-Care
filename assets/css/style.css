@@ -20,7 +20,7 @@ font-family: 'Quicksand' , sans-serif;
 
 /*header*/
 header {
-    background-color: grey;
+    background-color: #ffff;
     padding: 0 1rem;
     position:fixed;
     z-index: 99;
@@ -39,7 +39,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color:#000000;
+    color:#3a3a3a;
 }
 #menu{
     font-size: 110%;
@@ -57,7 +57,7 @@ h1 {
 /* nav styles for toggle dropdown menu*/
 nav{
     position: absolute;
-    background-color: gray;
+    background-color: #ffff;
     width:100%;
     left:0;
     padding: o 1rem;
@@ -80,16 +80,27 @@ nav{
 
 /*main content*/
 main {
-    background-color: #ffffff;
+    background-color:gray;
     /*make main take up surplus space to push footer to the bottom */
     flex: 1 0 auto;
     margin-top: 45px;
 }
 /*footer*/
-footer{
-    background-color: grey;
-    box-shadow: 0 -3px 2px #3a3a3a;
+  
+#social-networks{
+    text-align: center;
+    padding: 20px o;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#social-networks i {
+    font-size: 150%;
+    padding:5%;
+    color:#3a3a3a;
+}
+
 /*media query: tablets and larger (768px and up) */
 @media screen and (min-width:768px) {
    /* header */
